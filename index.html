@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MeiMei Academy — Prompts, Workflows &amp; AI Craft</title>
+<meta name="description" content="MeiMei Academy is a personal portfolio and prompt studio: browse AI images and videos, copy the exact prompts behind them, and study full multi-step workflows." />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ Header ============ -->
+<header class="site-header">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <svg class="blossom" viewBox="0 0 40 40" width="30" height="30" aria-hidden="true">
+        <g transform="translate(20,20)">
+          <g transform="rotate(0)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+          <g transform="rotate(72)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+          <g transform="rotate(144)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+          <g transform="rotate(216)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+          <g transform="rotate(288)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+        </g>
+      </svg>
+      <span>MeiMei Academy<small>Prompt studio &amp; portfolio</small></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#top" class="active">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#workflows">Workflows</a>
+      <a href="#about">About</a>
+      <a href="#follow">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#top">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#workflows">Workflows</a>
+    <a href="#about">About</a>
+    <a href="#follow">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Prompt studio &amp; portfolio</span>
+        <h1>Every image has <em>a lesson</em> inside it.</h1>
+        <svg class="hero-underline" viewBox="0 0 190 20" fill="none" aria-hidden="true">
+          <path d="M2 14C30 4 55 20 84 10C110 2 132 16 158 9C168 6.5 176 8 187 6" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>
+        <p>MeiMei Academy is where I break down the prompts, settings, and multi-step workflows behind my AI work — so you can study the craft, not just admire the result.</p>
+        <div class="hero-actions">
+          <a href="#gallery" class="btn btn-primary">Explore the gallery</a>
+          <a href="#workflows" class="btn btn-ghost">Browse workflows</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>120+</b><span>Prompts published</span></div>
+          <div class="stat"><b>18</b><span>Workflows documented</span></div>
+          <div class="stat"><b>4.2k</b><span>Prompts copied this month</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg class="blossom-watermark" viewBox="0 0 40 40">
+          <g transform="translate(20,20)">
+            <g transform="rotate(0)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+            <g transform="rotate(72)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+            <g transform="rotate(144)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+            <g transform="rotate(216)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+            <g transform="rotate(288)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+          </g>
+        </svg>
+        <div class="card card-a"><img src="Casual_Fashion_Portrait.webp" alt="AI-generated fashion portrait" /></div>
+        <div class="card card-b"><img src="Casual_Fashion_Outfit.webp" alt="AI-generated fashion outfit" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Gallery ============ -->
+  <section class="section on-raise" id="gallery">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">The gallery</span>
+          <h2>Outputs worth studying, prompts included.</h2>
+        </div>
+        <p>Every piece here ships with the exact prompt that made it. Copy it, tweak it, and make it yours.</p>
+      </div>
+
+      <div class="filter-bar">
+        <div class="chips" role="tablist" aria-label="Filter by category">
+          <button class="chip active" data-category="All" type="button">All</button>
+          <button class="chip" data-category="Portrait" type="button">Portrait</button>
+          <button class="chip" data-category="Product" type="button">Product</button>
+          <button class="chip" data-category="Cinematic" type="button">Cinematic</button>
+          <button class="chip" data-category="Concept" type="button">Concept</button>
+          <button class="chip" data-category="Video" type="button">Video</button>
+        </div>
+        <label class="search-field">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+          <input type="text" id="searchInput" placeholder="Search prompts, titles, tools…" aria-label="Search prompts" />
+        </label>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid"></div>
+      <p class="gallery-empty" id="galleryEmpty">Nothing matches that search — try another keyword or category.</p>
+    </div>
+  </section>
+
+  <!-- ============ Workflows ============ -->
+  <section class="section" id="workflows">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Workflows</span>
+          <h2>The full route, not just the final frame.</h2>
+        </div>
+        <p>A single prompt rarely tells the whole story. These are the multi-step processes I actually use, start to finish.</p>
+      </div>
+      <div class="workflow-list" id="workflowList"></div>
+    </div>
+  </section>
+
+  <!-- ============ About ============ -->
+  <section class="section on-raise" id="about">
+    <div class="wrap about-grid">
+      <div class="about-portrait">
+        <img src="Casual_Fashion_Showcase.webp" alt="MeiMei Academy AI fashion work" />
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">About this academy</span>
+        <p class="about-quote" style="margin-top:16px;">"I don't just want you to like the image — I want you to be able to make your own version of it."</p>
+        <p>I'm MeiMei, an AI-native artist and prompt designer. What started as a private notes file — settings I didn't want to forget, workflows I kept rebuilding from scratch — turned into this academy: a public, searchable record of what actually works.</p>
+        <p>Everything here is real output from real projects. No filler prompts, no theory without a picture to back it up. If a technique doesn't hold up when you try it yourself, it doesn't belong on this page.</p>
+        <ul class="about-list">
+          <li><b>3+ yrs</b><span>Working with generative models</span></li>
+          <li><b>6</b><span>Tools in regular rotation</span></li>
+          <li><b>Weekly</b><span>New prompts &amp; breakdowns</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Newsletter / CTA ============ -->
+  <section class="section" id="follow">
+    <div class="wrap">
+      <div class="cta-panel">
+        <svg class="cta-blossom" viewBox="0 0 40 40" aria-hidden="true">
+          <g transform="translate(20,20)">
+            <g transform="rotate(0)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+            <g transform="rotate(72)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+            <g transform="rotate(144)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+            <g transform="rotate(216)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+            <g transform="rotate(288)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+          </g>
+        </svg>
+        <div>
+          <h2>New prompts land most weeks.</h2>
+          <p>Leave your email and get new gallery pieces and workflow breakdowns as soon as they're published. No spam, unsubscribe any time.</p>
+        </div>
+        <div>
+          <form class="cta-form" id="ctaForm">
+            <input type="email" placeholder="you@email.com" required aria-label="Email address" />
+            <button class="btn btn-primary" type="submit">Get updates</button>
+          </form>
+          <p class="cta-note">One email a week, at most. Ever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <svg class="blossom" viewBox="0 0 40 40" width="26" height="26" aria-hidden="true">
+            <g transform="translate(20,20)">
+              <g transform="rotate(0)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+              <g transform="rotate(72)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+              <g transform="rotate(144)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+              <g transform="rotate(216)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+              <g transform="rotate(288)"><ellipse cx="0" cy="-11" rx="6.4" ry="10.5"/></g>
+            </g>
+          </svg>
+          <span>MeiMei Academy</span>
+        </a>
+        <p>A personal portfolio and open prompt library — built to teach the craft behind the image, one workflow at a time.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#workflows">Workflows</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Tools I use</h5>
+        <ul>
+          <li><a href="#gallery">Midjourney</a></li>
+          <li><a href="#gallery">Flux</a></li>
+          <li><a href="#gallery">Runway</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Site</h5>
+        <ul>
+          <li><a href="#follow">Contact</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> MeiMei Academy. All prompts and images belong to their respective creators.</p>
+      <div class="socials" aria-label="Social links">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="0.8" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3l7.5 9.3L3.4 21h2.4l6-6.9L16.8 21H21l-7.9-9.8L20.4 3H18l-5.5 6.3L7.2 3H3z"/></svg></a>
+        <a href="#" aria-label="Discord"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 5.5c-2 .4-3.3 1-3.3 1S3 10 3 15.5c0 0 1.5 1.8 4.5 2l1-1.6M16 5.5c2 .4 3.3 1 3.3 1S21 10 21 15.5c0 0-1.5 1.8-4.5 2l-1-1.6" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="9" cy="13.5" rx="1.3" ry="1.5" fill="currentColor" stroke="none"/><ellipse cx="15" cy="13.5" rx="1.3" ry="1.5" fill="currentColor" stroke="none"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ Modal ============ -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Prompt detail">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+    </button>
+    <div id="modalBody" class="modal-body-wrap"></div>
+  </div>
+</div>
+
+<!-- ============ Toast ============ -->
+<div class="toast" id="toast">
+  <svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span>Copied</span>
+</div>
+
+<!-- ============ Promo Popup Modal ============ -->
+<div class="promo-overlay" id="promoOverlay" role="dialog" aria-modal="true" aria-labelledby="promoTitle">
+  <div class="promo-modal">
+    <button class="promo-close" id="promoClose" type="button" aria-label="Close offer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+    </button>
+
+    <div class="promo-left">
+      <img src="Casual_Fashion_Portrait.webp" alt="AI Fashion Generation Example" class="promo-img" />
+      <div class="promo-img-badge">✨ AI-Generated in seconds</div>
+    </div>
+
+    <div class="promo-right">
+      <div class="promo-eyebrow">⏳ Limited-Time Launch Offer</div>
+      <h2 class="promo-title" id="promoTitle">Stop guessing.<br><em>Start creating.</em></h2>
+      <p class="promo-lead">Get the exact prompts, workflows, and step-by-step breakdowns behind every AI fashion image — and start producing pro-level outputs <strong>today</strong>.</p>
+
+      <div class="promo-plans">
+        <div class="plan plan-starter">
+          <div class="plan-header">
+            <span class="plan-name">Starter</span>
+            <div class="plan-price"><span class="plan-amount">$9</span><span class="plan-per">/mo</span></div>
+          </div>
+          <ul class="plan-features">
+            <li>✓ 50+ copyable prompts</li>
+            <li>✓ 2 full workflows</li>
+            <li>✓ Gallery access</li>
+          </ul>
+          <button class="btn-plan btn-plan-secondary" onclick="document.getElementById('promoOverlay').classList.remove('open')">Get Starter</button>
+        </div>
+
+        <div class="plan plan-pro">
+          <div class="plan-badge-top">🔥 Most Popular</div>
+          <div class="plan-header">
+            <span class="plan-name">Pro</span>
+            <div class="plan-price">
+              <span class="plan-original">$49</span>
+              <span class="plan-amount">$19</span><span class="plan-per">/mo</span>
+            </div>
+          </div>
+          <ul class="plan-features">
+            <li>✓ 120+ prompts (all categories)</li>
+            <li>✓ All 18 full workflows</li>
+            <li>✓ Prompt-by-prompt video breakdowns</li>
+            <li>✓ Weekly new drops</li>
+            <li>✓ Private community access</li>
+          </ul>
+          <button class="btn-plan btn-plan-primary" onclick="document.getElementById('promoOverlay').classList.remove('open')">Claim 61% Off — $19/mo</button>
+          <p class="plan-note">🔒 Cancel anytime. No questions asked.</p>
+        </div>
+      </div>
+
+      <p class="promo-urgency">⚡ Launch pricing ends when the timer hits zero — <strong><span id="promoCountdown">09:59</span></strong></p>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

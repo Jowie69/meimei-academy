@@ -98,6 +98,66 @@ const GALLERY_ITEMS = [
     prompt: "Slow cinematic dolly push through a foggy pine forest at first light, camera drifting forward at a steady pace, shafts of light breaking through the canopy, gentle atmospheric haze, no cuts, 8-second continuous take, calm and meditative pacing"
   },
   {
+    id: "v01",
+    title: "Kling V2.6 — Fashion Film",
+    category: "Video",
+    tool: "Kling AI v2.6",
+    likes: 518,
+    image: "Casual_Fashion_Portrait.webp",
+    video: "Kling V2.6 (7).mov",
+    prompt: "Cinematic fashion film shot — model in editorial styling, slow motion movement, soft diffused studio light, shallow depth of field, 9:16 vertical format. Generated with Kling AI v2.6 at 720p/24fps."
+  },
+  {
+    id: "v02",
+    title: "Sample Output 1 — AI Video",
+    category: "Video",
+    tool: "Kling AI",
+    likes: 374,
+    image: "Casual_Fashion_Outfit.webp",
+    video: "Output_Video1.mov",
+    prompt: "AI-generated video output demonstrating prompt-driven motion control, consistent subject identity, and cinematic framing. Study the camera movement and lighting for replication in your own workflow."
+  },
+  {
+    id: "v03",
+    title: "Sample Output 2 — AI Video",
+    category: "Video",
+    tool: "Kling AI",
+    likes: 291,
+    image: "Casual_Fashion_Showcase.webp",
+    video: "Output_Video2.mov",
+    prompt: "AI-generated video output. Notice how the motion prompt controls speed, light direction, and subject flow — all reproducible with the included step-by-step prompt breakdown."
+  },
+  {
+    id: "v04",
+    title: "Sample Output 3 — AI Video",
+    category: "Video",
+    tool: "Kling AI",
+    likes: 445,
+    image: "Casual_Menswear_Mannequin.webp",
+    video: "Output_Video3.mov",
+    prompt: "AI-generated cinematic video loop. This output demonstrates background separation, atmospheric depth, and smooth subject motion — key elements of a pro-level AI video workflow."
+  },
+  {
+    id: "v05",
+    title: "Sample Output 4 — AI Video",
+    category: "Video",
+    tool: "Kling AI",
+    likes: 362,
+    image: "Casual_Fashion_Outfit.webp",
+    video: "Output_Video4.mov",
+    prompt: "AI-generated video output showcasing editorial-style motion. The prompt specifies lighting angle, subject posture, pacing, and background treatment — all unlockable with the full workflow guide."
+  },
+  {
+    id: "v06",
+    title: "Magnific Closeup — Kling Camera",
+    category: "Video",
+    tool: "Kling AI + Magnific",
+    likes: 603,
+    image: "Casual_Fashion_Portrait.webp",
+    video: "magnific_closeup-camera-fixed-begin-with-a-slight-forward-l_kling_720p_9-16_24fps_51347.mov",
+    prompt: "Camera: fixed. Begin with a slight forward lean — Magnific upscaled closeup at 720p, 9:16, 24fps. Kling motion prompt: camera fixed, subtle organic sway, macro closeup depth, Magnific enhancement pass for skin detail and texture recovery."
+  },
+  {
     id: "g11",
     title: "Terracotta Still Life",
     category: "Product",

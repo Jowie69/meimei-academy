@@ -123,9 +123,12 @@
     galleryGrid.innerHTML = filtered
       .map(
         (item, i) => `
-      <article class="g-card" data-id="${item.id}" style="animation-delay:${Math.min(i * 40, 300)}ms">
+      <article class="g-card${item.video ? ' g-card--video' : ''}" data-id="${item.id}" style="animation-delay:${Math.min(i * 40, 300)}ms">
         <div class="g-media">
-          <img src="${item.image}" alt="${item.title}" loading="lazy" />
+          ${item.video
+            ? `<video src="${item.video}" poster="${item.image}" muted loop playsinline preload="none" class="g-video"></video>
+               <div class="g-play-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4.5l14 7.5-14 7.5V4.5z"/></svg></div>`
+            : `<img src="${item.image}" alt="${item.title}" loading="lazy" />`}
           <span class="g-badge">${item.category}</span>
           <span class="g-likes">${ICONS.heart}${formatLikes(item.likes)}</span>
         </div>
@@ -142,6 +145,13 @@
       </article>`
       )
       .join("");
+
+    /* Play/pause videos on hover */
+    galleryGrid.querySelectorAll('.g-video').forEach(vid => {
+      const card = vid.closest('.g-card');
+      card.addEventListener('mouseenter', () => { vid.play().catch(() => {}); });
+      card.addEventListener('mouseleave', () => { vid.pause(); vid.currentTime = 0; });
+    });
 
     galleryEmpty?.classList.toggle("show", filtered.length === 0);
   }
@@ -185,7 +195,9 @@
     if (!modalOverlay || !modalBody) return;
     modalBody.innerHTML = `
       <div class="modal-media">
-        <img src="${item.image}" alt="${item.title}" />
+        ${item.video
+          ? `<video src="${item.video}" poster="${item.image}" controls autoplay muted loop playsinline class="modal-video"></video>`
+          : `<img src="${item.image}" alt="${item.title}" />`}
       </div>
       <div class="modal-body">
         <span class="g-badge">${item.category}</span>

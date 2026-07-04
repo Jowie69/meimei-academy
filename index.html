@@ -10,6 +10,18 @@
 </head>
 <body>
 
+<!-- ============ Announcement Banner ============ -->
+<div class="announce-bar" id="announceBar">
+  <div class="announce-inner">
+    <span class="announce-pulse"></span>
+    <span>✨ Ready to level up your AI outputs?</span>
+    <a href="https://curzzo.com/" target="_blank" rel="noopener" class="announce-cta">Get the prompts &amp; workflows on Curzzo →</a>
+  </div>
+  <button class="announce-close" id="announceClose" aria-label="Close banner" type="button">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+  </button>
+</div>
+
 <!-- ============ Header ============ -->
 <header class="site-header">
   <div class="wrap">
@@ -67,8 +79,8 @@
         </svg>
         <p>MeiMei Academy is where I break down the prompts, settings, and multi-step workflows behind my AI work — so you can study the craft, not just admire the result.</p>
         <div class="hero-actions">
-          <a href="#gallery" class="btn btn-primary">Explore the gallery</a>
-          <a href="#workflows" class="btn btn-ghost">Browse workflows</a>
+          <a href="https://curzzo.com/" target="_blank" rel="noopener" class="btn btn-primary">Get the prompts on Curzzo ↗</a>
+          <a href="#gallery" class="btn btn-ghost">Explore the gallery</a>
         </div>
         <div class="hero-stats">
           <div class="stat"><b>120+</b><span>Prompts published</span></div>
@@ -287,7 +299,7 @@
             <li>✓ 2 full workflows</li>
             <li>✓ Gallery access</li>
           </ul>
-          <button class="btn-plan btn-plan-secondary" onclick="document.getElementById('promoOverlay').classList.remove('open')">Get Starter</button>
+          <a href="https://curzzo.com/" target="_blank" rel="noopener" class="btn-plan btn-plan-secondary">Get Starter on Curzzo</a>
         </div>
 
         <div class="plan plan-pro">
@@ -306,7 +318,7 @@
             <li>✓ Weekly new drops</li>
             <li>✓ Private community access</li>
           </ul>
-          <button class="btn-plan btn-plan-primary" onclick="document.getElementById('promoOverlay').classList.remove('open')">Claim 61% Off — $19/mo</button>
+          <a href="https://curzzo.com/" target="_blank" rel="noopener" class="btn-plan btn-plan-primary">Claim 61% Off on Curzzo ↗</a>
           <p class="plan-note">🔒 Cancel anytime. No questions asked.</p>
         </div>
       </div>
@@ -315,6 +327,12 @@
     </div>
   </div>
 </div>
+
+<!-- ============ Floating CTA ============ -->
+<a href="https://curzzo.com/" target="_blank" rel="noopener" class="fab-cta" id="fabCta" aria-label="Shop on Curzzo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" stroke-linejoin="round"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0" stroke-linecap="round"/></svg>
+  <span>Shop on Curzzo</span>
+</a>
 
 <script src="data.js"></script>
 <script src="script.js"></script>

@@ -27,6 +27,18 @@
     localStorage.setItem("meimei-theme", next);
   });
 
+  /* ---------------- Announcement bar ---------------- */
+  const announceBar   = document.getElementById("announceBar");
+  const announceClose = document.getElementById("announceClose");
+  if (announceBar && sessionStorage.getItem("meimei-announce-closed")) {
+    announceBar.style.display = "none";
+  }
+  announceClose?.addEventListener("click", () => {
+    announceBar?.classList.add("hidden");
+    setTimeout(() => { if (announceBar) announceBar.style.display = "none"; }, 350);
+    sessionStorage.setItem("meimei-announce-closed", "1");
+  });
+
   /* ---------------- Mobile nav ---------------- */
   const hamburger = document.getElementById("hamburger");
   const mobileNav = document.getElementById("mobileNav");
